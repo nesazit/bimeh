@@ -116,14 +116,6 @@ const handleSubmit = () => {
     if (store.userInsurences.length > 0) {
         router.visit("/personal", {
             method: "get",
-            onSuccess: (page: any) => {
-                toast("You Need to Login First", {
-                    theme: toast.THEME.COLORED,
-                    position: "top-center",
-                    transition: toast.TRANSITIONS.FLIP,
-                    type: toast.TYPE.ERROR,
-                });
-            },
         });
     } else {
         toast("Please select an insurance", {
