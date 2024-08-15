@@ -20,5 +20,7 @@ declare module 'vue' {
     ResponsiveNavLink: typeof import('./resources/js/Components/ResponsiveNavLink.vue')['default']
     SecondaryButton: typeof import('./resources/js/Components/SecondaryButton.vue')['default']
     TextInput: typeof import('./resources/js/Components/TextInput.vue')['default']
+    UiInput: typeof import('./resources/js/Components/Ui/Input.vue')['default']
+    UiSelect: typeof import('./resources/js/Components/Ui/Select.vue')['default']
   }
 }
