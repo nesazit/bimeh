@@ -1,5 +1,5 @@
 <template>
-    <Head title="Home" />
+    <Head title="Personal Inforamtion" />
     <section class="grid grid-cols-2 h-[100vh] w-[100vw]">
         <div
             class="w-full bg-cover bg-center rounded-r-2xl"
@@ -134,19 +134,19 @@ const submit = () => {
     });
 };
 
-// onMounted(() => {
-//     if (store.userInsurences.length == 0) {
-//         router.visit("/", {
-//             method: "get",
-//             onSuccess: (page: any) => {
-//                 toast("Please select an insurance", {
-//                     theme: toast.THEME.COLORED,
-//                     position: "top-center",
-//                     transition: toast.TRANSITIONS.FLIP,
-//                     type: toast.TYPE.ERROR,
-//                 });
-//             },
-//         });
-//     }
-// });
+onMounted(() => {
+    if (store.userInsurences.length == 0) {
+        router.visit("/", {
+            method: "get",
+            onSuccess: (page: any) => {
+                toast("Please select an insurance", {
+                    theme: toast.THEME.COLORED,
+                    position: "top-center",
+                    transition: toast.TRANSITIONS.FLIP,
+                    type: toast.TYPE.ERROR,
+                });
+            },
+        });
+    }
+});
 </script>

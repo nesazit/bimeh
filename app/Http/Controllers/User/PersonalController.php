@@ -23,9 +23,9 @@ class PersonalController extends Controller
         if ($user) {
             $user->update($inputs);
         } else {
-            User::create($inputs);
+            $user = User::create($inputs);
         }
 
-        return to_route('address.index', $user);
+        return to_route('address.index', $user->id);
     }
 }

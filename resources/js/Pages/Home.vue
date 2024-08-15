@@ -114,6 +114,10 @@ const handleSelectInsurance = (insuranceId: number) => {
 
 const handleSubmit = () => {
     if (store.userInsurences.length > 0) {
+        // localStorage.setItem(
+        //     "insurances",
+        //     JSON.stringify(store.userInsurences)
+        // );
         router.visit("/personal", {
             method: "get",
         });

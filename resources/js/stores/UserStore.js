@@ -17,7 +17,5 @@ export const useUserStore = defineStore("user", () => {
         // console.log(userInsurences.value);
     };
 
-    const isLoggedIn = computed(() => !!usePage().props.auth.user);
-
-    return { userInsurences, isLoggedIn, selectInsurance };
+    return { userInsurences, selectInsurance };
 });
